@@ -5,7 +5,8 @@ print(" 1- Resistência elétrica \n 2- Corrente elétrica \n 3- Tensão \n 4- R
 while True:
     try:
         escolha = int(input("Qual medida você deseja calcular?: "))
-        break
+        if escolha >=1 and escolha <=4:
+            break
     except ValueError:
         print("Dado inválido, tente novamente")
 
